@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+
+.container {
+  max-width: 1080px;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .loading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10rem;
+  }
+
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+    .card-container {
+      padding: 1rem;
+      background-color: beige;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      border: 1px solid black;
+      border-radius: 1.5rem;
+
+      .stock {
+        padding: 5px 15px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        border-radius: 5rem;
+      }
+    }
+  }
+
+  button {
+    padding: 20px 45px;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.product-details {
+  display: flex;
+
+  img {
+    flex: 1;
+  }
+
+  .product-details-content {
+    flex: 1;
+
+    small {
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-block: 1rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+  }
+}
+
+.grid-list {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.cart-items {
+  .item-img {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 8rem;
+    }
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .item-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    button {
+      padding: 5px 10px;
+      background-color: transparent;
+      font-size: 1.25rem;
+      outline: none;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+  }
+}
