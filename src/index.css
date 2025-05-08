@@ -26,6 +26,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-block: 2rem;
 
   h1 {
@@ -41,6 +42,16 @@
   a {
     text-decoration: none;
     color: black;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
 }
 
